@@ -22,3 +22,43 @@ function toggleProfileDetails2() {
     profileDetails.classList.toggle("show-details");
 }
 
+
+// JavaScript code
+
+document.addEventListener("DOMContentLoaded", function () {
+    const activitiesContainer = document.getElementById("activities-container");
+    const activityForm = document.getElementById("activity-form");
+  
+    activityForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+  
+      const activityName = document.getElementById("activity-name").value;
+      const activityImageUrl = document.getElementById("activity-image-url").value;
+  
+      if (activityName.trim() !== "" && activityImageUrl.trim() !== "") {
+        // Create a new activity box
+        const newActivity = document.createElement("div");
+        newActivity.classList.add("activity-box");
+  
+        const activityImage = document.createElement("div");
+        activityImage.classList.add("activity-image");
+        activityImage.innerHTML = `<img src="${activityImageUrl}" alt="${activityName}">`;
+  
+        const activityNameElement = document.createElement("div");
+        activityNameElement.classList.add("activity-name");
+        activityNameElement.textContent = activityName;
+  
+        newActivity.appendChild(activityImage);
+        newActivity.appendChild(activityNameElement);
+  
+        activitiesContainer.appendChild(newActivity);
+  
+        // Clear the form fields
+        document.getElementById("activity-name").value = "";
+        document.getElementById("activity-image-url").value = "";
+      } else {
+        alert("Please enter both activity name and image URL.");
+      }
+    });
+  });
+  

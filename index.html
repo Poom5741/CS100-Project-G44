@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Our CSTU Passport</title>
 </head>
+
 <body>
     <header class="header">
         <h1>Our CSTU Passport</h1>
@@ -33,7 +35,7 @@
                 <p>NICK NAME: Dream</p>
                 <p>STUDENTID: 6609611956</p>
                 <p>Favorite Thing</p>
-                <ul id="p2">
+                <ul id="p2 " class="no-bullet-list">
                     <li>GAME</li>
                     <li>Anime</li>
                     <li>Sleeping</li>
@@ -46,44 +48,116 @@
 
         <br><br>
 
-        
-        <div id="profile-picture" class="profile-picture">
-            <img src="pic" alt="Profile Picture" class="profile-picture">
+
+        <div id="profile-picture square-image-container" class="profile-picture">
+            <img src="./img/poom.jpg" alt="Profile Picture" class="profile-picture poom">
         </div>
 
         <h3>MEMBER 2</h3>
         <div id="profile-details2" class="profile-details2">
             <div>
+                <h3>NAME: Jirayu Charoenyost </h3>
+                <p>NICK NAME: Poom </p>
+                <p>STUDENTID: 6609611790</p>
+                <p>Favorite Thing</p>
+                <ul id="p2 " class="no-bullet-list">
+                    <li>Coding</li>
+                    <li>Trading</li>
+                    <li>Coffee</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="button-container">
+            <a href="#about" class="cta-button" onclick="toggleProfileDetails2()">Learn More - Member 2</a>
+        </div>
+
+        <div id="profile-picture" class="profile-picture">
+            <img src="" alt="Profile Picture" class="profile-picture">
+        </div>
+
+        <h3>MEMBER 3</h3>
+        <div id="profile-details" class="profile-details">
+            <div>
                 <h3>NAME: </h3>
                 <p>NICK NAME: </p>
                 <p>STUDENTID: </p>
                 <p>Favorite Thing</p>
-                <ul id="p2">
+                <ul id="p2 " class="no-bullet-list">
                     <li></li>
                     <li></li>
                     <li></li>
                 </ul>
             </div>
         </div>
-
         <div class="button-container">
-            <a href="#about" class="cta-button" onclick="toggleProfileDetails2()">Learn More - Member 2</a>
+            <a href="#about" class="cta-button" onclick="toggleProfileDetails()">Learn More - Member 3</a>
         </div>
     </section>
 
     <section id="activities" class="main-section">
         <h2>Our Activities</h2>
+        <div class="activities-container" id="activities-container">
+            <div class="activity-box">
+                <div class="activity-image">
+                    <img src="img/boxing.jpg" alt="Activity 1">
+                </div>
+                <div class="activity-name">Freshy game boxing</div>
+            </div>
+            <div class="activity-box">
+                <div class="activity-image">
+                    <img src="activity2.jpg" alt="Activity 2">
+                </div>
+                <div class="activity-name">Activity 2</div>
+            </div>
+            <div class="activity-box">
+                <div class="activity-image">
+                    <img src="activity3.jpg" alt="Activity 3">
+                </div>
+                <div class="activity-name">Activity 3</div>
+            </div>
+            <!-- Add more activity boxes as needed -->
+        </div>
+
+
         <p>FORM</p>
-  
+        <form id="activity-form">
+            <label for="activity-name">Activity Name:</label>
+            <input type="text" id="activity-name" required><br>
+
+            <label for="activity-image-url">Image URL:</label>
+            <input type="text" id="activity-image-url" required><br>
+
+            <button type="submit">Add Activity</button>
+        </form>
+
     </section>
-    
+
     <section id="contact" class="main-section">
         <h2>Contact Us</h2>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/passta_aa/" target="_blank" class="icon-link">
-                <img src="img/instagram_icon.png" alt="Instagram Icon">
-                IG : MEM 1
-            </a>
+        <div class="contact-child">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/passta_aa/" target="_blank" class="icon-link">
+                    <img src="img/instagram_icon.png" alt="Instagram Icon">
+                    IG : MEM 1
+                </a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/bytebattlerjirayu/" target="_blank" class="icon-link">
+                    <img src="img/instagram_icon.png" alt="Instagram Icon">
+                    IG : MEM 2
+                </a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/passta_aa/" target="_blank" class="icon-link">
+                    <img src="img/instagram_icon.png" alt="Instagram Icon">
+                    IG : MEM 3
+                </a>
+            </div>
         </div>
     </section>
 
@@ -95,4 +169,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
