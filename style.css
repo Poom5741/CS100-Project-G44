@@ -59,7 +59,28 @@ body {
     max-height: 500px; /* ปรับความสูงให้เท่ากับความสูงของข้อมูล */
 }
 
+/* เพิ่มสไตล์สำหรับ Profile Details Section - Member 3 */
 
+.profile-details3 {
+    background-color: rgb(211, 211, 211);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden; /* ทำให้ข้อมูลซ่อนอยู่เมื่อไม่แสดง */
+    max-height: 0; /* ตั้งค่าความสูงเริ่มต้นเป็น 0 */
+    transition: max-height 0.3s ease; /* เพิ่มเอฟเฟกต์ transition */
+}
+
+.profile-details3 h3 {
+    color: #2e2e2e;
+}
+
+/* เพิ่มสไตล์สำหรับการแสดง/ซ่อนข้อมูล */
+.profile-details3.show-details {
+    max-height: 500px; /* ปรับความสูงให้เท่ากับความสูงของข้อมูล */
+}
+
+/* ---------- */
 
 .header {
     background-color: rgb(68, 68, 68);
