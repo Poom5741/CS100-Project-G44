@@ -1,177 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Our CSTU Passport</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <h1>Our CSTU Passport</h1>
+      <h1>Our CSTU Passport</h1>
     </header>
     <nav class="navbar">
-        <ul>
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#activities" class="nav-link">Our Activities</a></li>
-            <li><a href="#contact" class="nav-link">Contact Us</a></li>
-        </ul>
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#activities" class="nav-link">Our Activities</a></li>
+        <li><a href="#contact" class="nav-link">Contact Us</a></li>
+      </ul>
     </nav>
 
     <section id="home" class="main-section">
-        <h2>Welcome to Our CSTU Passport</h2>
-        <p>Learn more about our amazing team.</p>
-        <br><br>
-        <!---------------->
-        <div id="profile-picture" class="profile-picture">
-            <img src="img/me2.jpg" alt="Profile Picture" class="profile-picture">
+      <h2>Welcome to Our CSTU Passport</h2>
+      <p>Learn more about our amazing team.</p>
+      <br /><br />
+      <!---------------->
+      <div id="profile-picture" class="profile-picture">
+        <img src="img/me2.jpg" alt="Profile Picture" class="profile-picture" />
+      </div>
+
+      <h3>MEMBER 1</h3>
+      <div id="profile-details" class="profile-details">
+        <div>
+          <h3>NAME: Nichapat Rodpranee</h3>
+          <p>NICK NAME: Dream</p>
+          <p>STUDENTID: 6609611956</p>
+          <p>Favorite Thing</p>
+          <ul id="p2 " class="no-bullet-list">
+            <li>GAME</li>
+            <li>Anime</li>
+            <li>Sleeping</li>
+          </ul>
         </div>
+      </div>
+      <div class="button-container">
+        <a href="#about" class="cta-button" onclick="toggleProfileDetails()"
+          >Learn More - Member 1</a
+        >
+      </div>
 
-        <h3>MEMBER 1</h3>
-        <div id="profile-details" class="profile-details">
-            <div>
-                <h3>NAME: Nichapat Rodpranee</h3>
-                <p>NICK NAME: Dream</p>
-                <p>STUDENTID: 6609611956</p>
-                <p>Favorite Thing</p>
-                <ul id="p2 " class="no-bullet-list">
-                    <li>GAME</li>
-                    <li>Anime</li>
-                    <li>Sleeping</li>
-                </ul>
-            </div>
+      <br /><br />
+      <!---------------->
+
+      <div id="profile-picture square-image-container" class="profile-picture">
+        <img
+          src="./img/poom.jpg"
+          alt="Profile Picture"
+          class="profile-picture poom"
+        />
+      </div>
+
+      <h3>MEMBER 2</h3>
+      <div id="profile-details2" class="profile-details2">
+        <div>
+          <h3>NAME: Jirayu Charoenyost</h3>
+          <p>NICK NAME: Poom</p>
+          <p>STUDENTID: 6609611790</p>
+          <p>Favorite Thing</p>
+          <ul id="p2 " class="no-bullet-list">
+            <li>Coding</li>
+            <li>Trading</li>
+            <li>Coffee</li>
+          </ul>
         </div>
-        <div class="button-container">
-            <a href="#about" class="cta-button" onclick="toggleProfileDetails()">Learn More - Member 1</a>
+      </div>
+
+      <!---------------->
+
+      <div class="button-container">
+        <a href="#about" class="cta-button" onclick="toggleProfileDetails2()"
+          >Learn More - Member 2</a
+        >
+      </div>
+
+      <div id="profile-picture" class="profile-picture">
+        <img src="" alt="Profile Picture" class="profile-picture" />
+      </div>
+
+      <h3>MEMBER 3</h3>
+      <div id="profile-details3" class="profile-details3">
+        <div>
+          <h3>NAME:</h3>
+          <p>NICK NAME:</p>
+          <p>STUDENTID:</p>
+          <p>Favorite Thing</p>
+          <ul id="p2 " class="no-bullet-list">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </div>
+      </div>
+      <div class="button-container">
+        <a href="#about" class="cta-button" onclick="toggleProfileDetails3()"
+          >Learn More - Member 3</a
+        >
+      </div>
 
-        <br><br>
-        <!---------------->
-
-        <div id="profile-picture square-image-container" class="profile-picture">
-            <img src="./img/poom.jpg" alt="Profile Picture" class="profile-picture poom">
-        </div>
-
-        <h3>MEMBER 2</h3>
-        <div id="profile-details2" class="profile-details2">
-            <div>
-                <h3>NAME: Jirayu Charoenyost </h3>
-                <p>NICK NAME: Poom </p>
-                <p>STUDENTID: 6609611790</p>
-                <p>Favorite Thing</p>
-                <ul id="p2 " class="no-bullet-list">
-                    <li>Coding</li>
-                    <li>Trading</li>
-                    <li>Coffee</li>
-                </ul>
-            </div>
-        </div>
-
-        <!---------------->
-
-
-        <div class="button-container">
-            <a href="#about" class="cta-button" onclick="toggleProfileDetails2()">Learn More - Member 2</a>
-        </div>
-
-        <div id="profile-picture" class="profile-picture">
-            <img src="" alt="Profile Picture" class="profile-picture">
-        </div>
-
-        <h3>MEMBER 3</h3>
-        <div id="profile-details3" class="profile-details3">
-            <div>
-                <h3>NAME: </h3>
-                <p>NICK NAME: </p>
-                <p>STUDENTID: </p>
-                <p>Favorite Thing</p>
-                <ul id="p2 " class="no-bullet-list">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-        </div>
-        <div class="button-container">
-            <a href="#about" class="cta-button" onclick="toggleProfileDetails3()">Learn More - Member 3</a>
-        </div>
-
-
-        <!---------------->
-
+      <!---------------->
     </section>
 
     <section id="activities" class="main-section">
-        <h2>Our Activities</h2>
-        <div class="activities-container" id="activities-container">
-            <div class="activity-box">
-                <div class="activity-image">
-                    <img src="img/boxing.jpg" alt="Activity 1">
-                </div>
-                <div class="activity-name">Freshy game boxing</div>
-            </div>
-            <div class="activity-box">
-                <div class="activity-image">
-                    <img src="activity2.jpg" alt="Activity 2">
-                </div>
-                <div class="activity-name">Activity 2</div>
-            </div>
-            <div class="activity-box">
-                <div class="activity-image">
-                    <img src="activity3.jpg" alt="Activity 3">
-                </div>
-                <div class="activity-name">Activity 3</div>
-            </div>
-            <!-- Add more activity boxes as needed -->
+      <h2>Our Activities</h2>
+      <div class="activities-container" id="activities-container">
+        <div class="activity-box">
+          <div class="activity-image">
+            <img src="img/boxing.jpg" alt="Activity 1" />
+          </div>
+          <div class="activity-name">Freshy game boxing</div>
+          <div class="activity-data">
+            <ul class="no-bullet-list">
+              <li class="fullname">Jirayu Charoenyost</li>
+              <li class="stdID">6609611790</li>
+              <li class="stdEmail">jirayu.charo@dome.tu.ac.th</li>
+              <li class="academicYear">2566</li>
+              <li class="startD">02-12-2004</li>
+              <li class="startD">02-12-2005</li>
+            </ul>
+          </div>
         </div>
 
+        <div class="activity-box">
+          <div class="activity-image">
+            <img
+              src="https://images.pexels.com/photos/8316571/pexels-photo-8316571.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Activity 1"
+            />
+          </div>
+          <div class="activity-name">test 1</div>
+          <div class="activity-data">
+            <ul class="no-bullet-list">
+              <li class="fullname">capybara</li>
+              <li class="stdID">6609611790</li>
+              <li class="stdEmail">jirayu.charo@dome.tu.ac.th</li>
+              <li class="academicYear">2566</li>
+              <li class="startD">02-12-2004</li>
+              <li class="startD">02-12-2005</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-        <p>FORM</p>
-        <form id="activity-form">
-            <label for="activity-name">Activity Name:</label>
-            <input type="text" id="activity-name" required><br>
+      <p>FORM</p>
+      <form id="activity-form">
+        <div class="form-group">
+          <label for="fullname">Firstname and Lastname</label>
+          <input type="text" id="fullname" name="fullname" /><br />
+          <small class="small"
+            >Only enter your first name and last name, middle name is not
+            necessary.</small
+          ><br />
+          <span id="fullnameError" class="error"></span>
+        </div>
 
-            <label for="activity-image-url">Image URL:</label>
-            <input type="text" id="activity-image-url" required><br><br>
+        <div class="form-group">
+          <label for="studentID">Student ID</label>
+          <input type="text" id="studentID" name="studentID" /><br />
+          <small class="small">Please enter your 10-digit student ID.</small
+          ><br />
+          <span id="studentIDError" class="error"></span>
+        </div>
 
-            <button type="submit" class="cta-button">Add Activity</button>
-        </form>
+        <div class="form-group">
+          <label for="email">University Email</label>
+          <input type="email" id="email" name="email" /><br />
+          <small class="small"
+            >Please provide your university email in the format
+            "xxx.yyy@dome.tu.ac.th".</small
+          ><br />
+          <span id="emailError" class="error"></span>
+        </div>
 
+        <div class="form-group">
+          <label for="activity-name">Activity Name:</label>
+          <input type="text" id="activity-name" required /><br />
+        </div>
+
+        <div class="form-group">
+          <label for="academicYear">Academic Year</label>
+          <select id="academicYear" name="academicYear">
+            <option value="" disabled="" selected="">Select an option</option>
+            <option value="2561">2561</option>
+            <option value="2562">2562</option>
+            <option value="2563">2563</option>
+            <option value="2564">2564</option>
+            <option value="2565">2565</option>
+            <option value="2566">2566</option>
+            <option value="2567">2567</option>
+            <option value="2568">2568</option>
+            <option value="2569">2569</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="semester">Semester</label>
+          <select id="semester" name="semester">
+            <option value="" disabled="" selected="">Select an option</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="Summer">Summer</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="startDate">Start Date/Time</label>
+          <input type="datetime-local" id="startDate" name="startDate" />
+        </div>
+
+        <div class="form-group">
+          <label for="endDate">End Date/Time</label>
+          <input type="datetime-local" id="endDate" name="endDate" />
+        </div>
+
+        <div class="form-group">
+          <label for="activity-image-url">Image URL:</label>
+          <input type="text" id="activity-image-url" required /><br /><br />
+        </div>
+
+        <button type="submit" class="cta-button">Add Activity</button>
+      </form>
     </section>
 
     <section id="contact" class="main-section">
-        <h2>Contact Us</h2>
-        <div class="contact-child">
-            <div class="social-icons">
-                <a href="https://www.instagram.com/passta_aa/" target="_blank" class="icon-link">
-                    <img src="img/instagram_icon.png" alt="Instagram Icon">
-                    IG : MEM 1
-                </a>
-            </div>
-            <div class="social-icons">
-                <a href="https://www.instagram.com/bytebattlerjirayu/" target="_blank" class="icon-link">
-                    <img src="img/instagram_icon.png" alt="Instagram Icon">
-                    IG : MEM 2
-                </a>
-            </div>
-            <div class="social-icons">
-                <a href="https://www.instagram.com/passta_aa/" target="_blank" class="icon-link">
-                    <img src="img/instagram_icon.png" alt="Instagram Icon">
-                    IG : MEM 3
-                </a>
-            </div>
+      <h2>Contact Us</h2>
+      <div class="contact-child">
+        <div class="social-icons">
+          <a
+            href="https://www.instagram.com/passta_aa/"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src="img/instagram_icon.png" alt="Instagram Icon" />
+            IG : MEM 1
+          </a>
         </div>
+        <div class="social-icons">
+          <a
+            href="https://www.instagram.com/bytebattlerjirayu/"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src="img/instagram_icon.png" alt="Instagram Icon" />
+            IG : MEM 2
+          </a>
+        </div>
+        <div class="social-icons">
+          <a
+            href="https://www.instagram.com/passta_aa/"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src="img/instagram_icon.png" alt="Instagram Icon" />
+            IG : MEM 3
+          </a>
+        </div>
+      </div>
     </section>
 
-    <br><br><br>
+    <br /><br /><br />
 
     <footer class="footer">
-        <p>&copy; Beautiful Website. All rights reserved.</p>
+      <p>&copy; Beautiful Website. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
