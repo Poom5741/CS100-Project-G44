@@ -22,6 +22,13 @@ function toggleProfileDetails2() {
     profileDetails.classList.toggle("show-details");
 }
 
+function toggleProfileDetails3() {
+  var profileDetails = document.getElementById("profile-details3");
+
+  // สลับคลาสเพื่อเปิด/ปิดการแสดงเนื้อหา
+  profileDetails.classList.toggle("show-details");
+}
+
 
 // JavaScript code
 
